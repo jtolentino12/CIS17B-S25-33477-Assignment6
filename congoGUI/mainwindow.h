@@ -5,7 +5,7 @@
 #include <QLineEdit>
 #include <QListWidget>
 #include <QPushButton>
-#include <"StorageManager.h">
+#include "StorageManager.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -24,6 +24,7 @@ private slots:
     void onAddItemClicked();
     void onFindItemClicked();
     void onRemoveItemClicked();
+    void showAboutDialog();
 
 private:
     QLineEdit *idInput, *descInput, *locInput;
